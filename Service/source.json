@@ -1,0 +1,123 @@
+{
+	"speakers": [
+		{
+			"id": "10001",
+			"name": "Sally Smith"
+		},
+		{
+			"id": "10002",
+			"name": "Jimmy John"
+		},
+		{
+			"id": "10003",
+			"name": "Andrew Appleseed"
+		},
+		{
+			"id": "10004",
+			"name": "Stephen Stevenson"
+		}
+	],
+	"talks": [
+		{
+			"id": "20001",
+			"name": "How To Do The Stuff"
+		},
+		{
+			"id": "20002",
+			"name": "How To Do The Stuff Better"
+		},
+		{
+			"id": "20003",
+			"name": "How I Accidentally Discovered The Stuff"
+		},
+		{
+			"id": "20004",
+			"name": "The Stuff, Why Do We Bother?"
+		},
+		{
+			"id": "20005",
+			"name": "Unit Testing The Stuff With Xcode 9"
+		}
+	],
+	"speaker": {
+		"10001": {
+			"id": "10001",
+			"name": "Sally Smith",
+			"avatarURL": "http://i.huffpost.com/gen/1860407/images/o-BLACK-FOOTED-CAT-KITTENS-facebook.jpg",
+			"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"talks": [
+				"20001"
+			]
+		},
+		"10002": {
+			"id": "10002",
+			"name": "Jimmy John",
+			"avatarURL": "http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg",
+			"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"talks": [
+				"20002"
+			]
+		},
+		"10003": {
+			"id": "10003",
+			"name": "Andrew Appleseed",
+			"avatarURL": "https://www.petfinder.com/wp-content/uploads/2012/11/99950237-why-cats-meow-632x475.jpg",
+			"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"talks": [
+				"20003"
+			]
+		},
+		"10004": {
+			"id": "10004",
+			"name": "Stephen Stevenson",
+			"avatarURL": "https://pbs.twimg.com/profile_images/447460759329460224/mt2UmwGG_400x400.jpeg",
+			"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"talks": [
+				"20004",
+				"20005"
+			]
+		}
+	},
+	"talk": {
+		"20001": {
+			"id": "20001",
+			"name": "How To Do The Stuff",
+			"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"location": "Room 1",
+			"date": "2015-01-01T12:00:00Z",
+			"speaker": "10001"
+		},
+		"20002": {
+			"id": "20002",
+			"name": "How To Do The Stuff Better",
+			"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"location": "Room 1",
+			"date": "2015-01-01T13:00:00Z",
+			"speaker": "10002"
+		},
+		"20003": {
+			"id": "20003",
+			"name": "How I Accidentally Discovered The Stuff",
+			"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"location": "Room 1",
+			"date": "2015-01-01T14:00:00Z",
+			"speaker": "10003"
+		},
+		"20004": {
+			"id": "20004",
+			"name": "The Stuff, Why Do We Bother?",
+			"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"location": "Room 1",
+			"date": "2015-01-02T12:00:00Z",
+			"speaker": "10004"
+		},
+		"20005": {
+			"id": "20005",
+			"name": "Unit Testing The Stuff With Xcode 9",
+			"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie neque metus, tristique vulputate enim condimentum sit amet. Vivamus quis felis lacinia nunc vestibulum pulvinar eu in augue. Fusce ex.",
+			"location": "Room 1",
+			"date": "2015-01-02T13:00:00Z",
+			"speaker": "10004"
+		}
+	}
+}

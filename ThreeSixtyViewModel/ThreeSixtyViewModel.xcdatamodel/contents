@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8175.2" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Speaker" representedClassName=".Speaker" syncable="YES">
+        <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="talks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Talk" inverseName="speaker" inverseEntity="Talk" syncable="YES"/>
+    </entity>
+    <entity name="Talk" representedClassName=".Talk" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="speaker" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Speaker" inverseName="talks" inverseEntity="Speaker" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Speaker" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Talk" positionX="-54" positionY="-9" width="128" height="135"/>
+    </elements>
+</model>

@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7577E3FA1BA4B64F0022DBD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E3F91BA4B64F0022DBD9 /* AppDelegate.swift */; };
-		7577E3FC1BA4B64F0022DBD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E3FB1BA4B64F0022DBD9 /* ViewController.swift */; };
-		7577E3FF1BA4B64F0022DBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E3FD1BA4B64F0022DBD9 /* Main.storyboard */; };
-		7577E4021BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4001BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodeld */; };
+		752836BF1BAF074D005ABA0E /* TalksPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836BE1BAF074D005ABA0E /* TalksPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		752836C11BAF0799005ABA0E /* SpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		752836C31BAF07C3005ABA0E /* TalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836C21BAF07C3005ABA0E /* TalkListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		752836CD1BB03BB2005ABA0E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836CC1BB03BB2005ABA0E /* PageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		753D6B641BB0E0D000726540 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B631BB0E0D000726540 /* TalkViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		753D6B661BB0E1F900726540 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B651BB0E1F900726540 /* SpeakerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7577E4041BA4B64F0022DBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4031BA4B64F0022DBD9 /* Assets.xcassets */; };
 		7577E4071BA4B64F0022DBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */; };
-		7577E4121BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4111BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.swift */; };
+		7577E4121BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4111BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift */; };
+		7577E4261BA4B6F10022DBD9 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41C1BA4B6F10022DBD9 /* Services.swift */; };
+		7577E4271BA4B6F10022DBD9 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41D1BA4B6F10022DBD9 /* Speaker.swift */; };
+		7577E4281BA4B6F10022DBD9 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41E1BA4B6F10022DBD9 /* Talk.swift */; };
+		7577E4291BA4B6F10022DBD9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41F1BA4B6F10022DBD9 /* Store.swift */; };
+		7577E42A1BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */; };
+		7577E42B1BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */; };
+		7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */; };
+		7577E42D1BA4B6F10022DBD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4231BA4B6F10022DBD9 /* AppDelegate.swift */; };
+		7577E42E1BA4B6F10022DBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4241BA4B6F10022DBD9 /* Main.storyboard */; };
+		7577E42F1BA4B6F10022DBD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4251BA4B6F10022DBD9 /* ViewController.swift */; };
+		7577E4331BA4D18E0022DBD9 /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */; };
+		7577E4351BA4D5E30022DBD9 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4341BA4D5E30022DBD9 /* ViewModels.swift */; };
+		7577E4371BA4DC9C0022DBD9 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */; };
+		7577E4391BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4381BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +43,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		752836BE1BAF074D005ABA0E /* TalksPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksPageViewController.swift; sourceTree = "<group>"; };
+		752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListViewController.swift; sourceTree = "<group>"; };
+		752836C21BAF07C3005ABA0E /* TalkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewController.swift; sourceTree = "<group>"; };
+		752836CC1BB03BB2005ABA0E /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		753D6B631BB0E0D000726540 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		753D6B651BB0E1F900726540 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 		7577E3F61BA4B64F0022DBD9 /* ThreeSixtyViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSixtyViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7577E3F91BA4B64F0022DBD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7577E3FB1BA4B64F0022DBD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7577E3FE1BA4B64F0022DBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7577E4011BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreeSixtyViewModel.xcdatamodel; sourceTree = "<group>"; };
 		7577E4031BA4B64F0022DBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7577E4061BA4B64F0022DBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7577E4081BA4B64F0022DBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7577E40D1BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeSixtyViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7577E4111BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSixtyViewModelTests.swift; sourceTree = "<group>"; };
+		7577E4111BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSixtyServiceTests.swift; sourceTree = "<group>"; };
 		7577E4131BA4B64F0022DBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7577E41C1BA4B6F10022DBD9 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		7577E41D1BA4B6F10022DBD9 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		7577E41E1BA4B6F10022DBD9 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		7577E41F1BA4B6F10022DBD9 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreeSixtyViewModel.xcdatamodel; sourceTree = "<group>"; };
+		7577E4231BA4B6F10022DBD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7577E4241BA4B6F10022DBD9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7577E4251BA4B6F10022DBD9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
+		7577E4341BA4D5E30022DBD9 /* ViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		7577E4381BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeSixtyViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +111,20 @@
 		7577E3F81BA4B64F0022DBD9 /* ThreeSixtyViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7577E3F91BA4B64F0022DBD9 /* AppDelegate.swift */,
-				7577E3FB1BA4B64F0022DBD9 /* ViewController.swift */,
-				7577E3FD1BA4B64F0022DBD9 /* Main.storyboard */,
-				7577E4031BA4B64F0022DBD9 /* Assets.xcassets */,
-				7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */,
-				7577E4081BA4B64F0022DBD9 /* Info.plist */,
-				7577E4001BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodeld */,
+				7577E4231BA4B6F10022DBD9 /* AppDelegate.swift */,
+				7577E4241BA4B6F10022DBD9 /* Main.storyboard */,
+				7577E4251BA4B6F10022DBD9 /* ViewController.swift */,
+				7577E4311BA4B72B0022DBD9 /* Model */,
+				7577E4301BA4B7150022DBD9 /* Resources */,
+				7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */,
+				7577E4341BA4D5E30022DBD9 /* ViewModels.swift */,
+				7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */,
+				752836BE1BAF074D005ABA0E /* TalksPageViewController.swift */,
+				752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */,
+				753D6B651BB0E1F900726540 /* SpeakerViewController.swift */,
+				752836C21BAF07C3005ABA0E /* TalkListViewController.swift */,
+				753D6B631BB0E0D000726540 /* TalkViewController.swift */,
+				752836CC1BB03BB2005ABA0E /* PageViewController.swift */,
 			);
 			path = ThreeSixtyViewModel;
 			sourceTree = "<group>";
@@ -93,10 +132,35 @@
 		7577E4101BA4B64F0022DBD9 /* ThreeSixtyViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				7577E4111BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.swift */,
+				7577E4111BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift */,
+				7577E4381BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift */,
 				7577E4131BA4B64F0022DBD9 /* Info.plist */,
 			);
 			path = ThreeSixtyViewModelTests;
+			sourceTree = "<group>";
+		};
+		7577E4301BA4B7150022DBD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */,
+				7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */,
+				7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */,
+				7577E4031BA4B64F0022DBD9 /* Assets.xcassets */,
+				7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */,
+				7577E4081BA4B64F0022DBD9 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7577E4311BA4B72B0022DBD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7577E41C1BA4B6F10022DBD9 /* Services.swift */,
+				7577E41F1BA4B6F10022DBD9 /* Store.swift */,
+				7577E41D1BA4B6F10022DBD9 /* Speaker.swift */,
+				7577E41E1BA4B6F10022DBD9 /* Talk.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +207,7 @@
 		7577E3EE1BA4B64F0022DBD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "POSSIBLE Mobile";
 				TargetAttributes = {
@@ -179,9 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7577E42E1BA4B6F10022DBD9 /* Main.storyboard in Resources */,
 				7577E4071BA4B64F0022DBD9 /* LaunchScreen.storyboard in Resources */,
 				7577E4041BA4B64F0022DBD9 /* Assets.xcassets in Resources */,
-				7577E3FF1BA4B64F0022DBD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +264,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7577E4021BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodeld in Sources */,
-				7577E3FC1BA4B64F0022DBD9 /* ViewController.swift in Sources */,
-				7577E3FA1BA4B64F0022DBD9 /* AppDelegate.swift in Sources */,
+				7577E4331BA4D18E0022DBD9 /* ViewModelProtocols.swift in Sources */,
+				752836BF1BAF074D005ABA0E /* TalksPageViewController.swift in Sources */,
+				7577E4351BA4D5E30022DBD9 /* ViewModels.swift in Sources */,
+				7577E42D1BA4B6F10022DBD9 /* AppDelegate.swift in Sources */,
+				7577E4261BA4B6F10022DBD9 /* Services.swift in Sources */,
+				753D6B641BB0E0D000726540 /* TalkViewController.swift in Sources */,
+				753D6B661BB0E1F900726540 /* SpeakerViewController.swift in Sources */,
+				7577E4371BA4DC9C0022DBD9 /* Dynamic.swift in Sources */,
+				7577E4271BA4B6F10022DBD9 /* Speaker.swift in Sources */,
+				7577E42F1BA4B6F10022DBD9 /* ViewController.swift in Sources */,
+				7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */,
+				7577E42A1BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift in Sources */,
+				7577E42B1BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift in Sources */,
+				752836C11BAF0799005ABA0E /* SpeakerListViewController.swift in Sources */,
+				7577E4281BA4B6F10022DBD9 /* Talk.swift in Sources */,
+				752836C31BAF07C3005ABA0E /* TalkListViewController.swift in Sources */,
+				7577E4291BA4B6F10022DBD9 /* Store.swift in Sources */,
+				752836CD1BB03BB2005ABA0E /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7577E4121BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.swift in Sources */,
+				7577E4121BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift in Sources */,
+				7577E4391BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7577E3FD1BA4B64F0022DBD9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7577E3FE1BA4B64F0022DBD9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -330,10 +403,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ThreeSixtyViewModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyViewModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -341,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ThreeSixtyViewModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyViewModel;
@@ -391,6 +467,7 @@
 				7577E4181BA4B64F0022DBD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7577E4191BA4B64F0022DBD9 /* Build configuration list for PBXNativeTarget "ThreeSixtyViewModelTests" */ = {
 			isa = XCConfigurationList;
@@ -399,21 +476,9 @@
 				7577E41B1BA4B64F0022DBD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7577E4001BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7577E4011BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodel */,
-			);
-			currentVersion = 7577E4011BA4B64F0022DBD9 /* ThreeSixtyViewModel.xcdatamodel */;
-			path = ThreeSixtyViewModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
 }
