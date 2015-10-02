@@ -11,6 +11,7 @@
 		752836C11BAF0799005ABA0E /* SpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		752836C31BAF07C3005ABA0E /* TalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836C21BAF07C3005ABA0E /* TalkListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		752836CD1BB03BB2005ABA0E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836CC1BB03BB2005ABA0E /* PageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7531D8A11BBF37DB0047C127 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531D8A01BBF37DB0047C127 /* Util.swift */; settings = {ASSET_TAGS = (); }; };
 		753D6B641BB0E0D000726540 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B631BB0E0D000726540 /* TalkViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		753D6B661BB0E1F900726540 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B651BB0E1F900726540 /* SpeakerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7577E4041BA4B64F0022DBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4031BA4B64F0022DBD9 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListViewController.swift; sourceTree = "<group>"; };
 		752836C21BAF07C3005ABA0E /* TalkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewController.swift; sourceTree = "<group>"; };
 		752836CC1BB03BB2005ABA0E /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		7531D8A01BBF37DB0047C127 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		753D6B631BB0E0D000726540 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		753D6B651BB0E1F900726540 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 		7577E3F61BA4B64F0022DBD9 /* ThreeSixtyViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSixtyViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				752836C21BAF07C3005ABA0E /* TalkListViewController.swift */,
 				753D6B631BB0E0D000726540 /* TalkViewController.swift */,
 				752836CC1BB03BB2005ABA0E /* PageViewController.swift */,
+				7531D8A01BBF37DB0047C127 /* Util.swift */,
 			);
 			path = ThreeSixtyViewModel;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				7577E42F1BA4B6F10022DBD9 /* ViewController.swift in Sources */,
 				7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */,
 				7577E42A1BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift in Sources */,
+				7531D8A11BBF37DB0047C127 /* Util.swift in Sources */,
 				7577E42B1BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift in Sources */,
 				752836C11BAF0799005ABA0E /* SpeakerListViewController.swift in Sources */,
 				7577E4281BA4B6F10022DBD9 /* Talk.swift in Sources */,

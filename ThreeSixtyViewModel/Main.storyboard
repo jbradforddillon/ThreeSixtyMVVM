@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -98,28 +99,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajz-3B-xJ1">
-                                <rect key="frame" x="20" y="96" width="560" height="26.5"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 1, 2001" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRf-34-5am">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 1, 2001" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YRf-34-5am">
                                 <rect key="frame" x="20" y="131" width="560" height="26.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTx-lc-MtU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OTx-lc-MtU">
                                 <rect key="frame" x="20" y="165" width="560" height="26.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT9-Td-crh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jT9-Td-crh">
                                 <rect key="frame" x="20" y="200" width="560" height="26.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -166,10 +160,25 @@
                                     <constraint firstItem="zlc-1X-KvL" firstAttribute="top" secondItem="3NI-RF-vXO" secondAttribute="bottom" constant="10" id="re9-Vo-pp1"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Talk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8me-R3-eKh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Talk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8me-R3-eKh">
                                 <rect key="frame" x="20" y="40" width="560" height="48"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="48"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8e-QK-Ej9">
+                                <rect key="frame" x="215" y="234" width="170.5" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="R8e-QK-Ej9" secondAttribute="height" multiplier="4:3" id="s55-9M-P2g"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ajz-3B-xJ1">
+                                <rect key="frame" x="20" y="96" width="560" height="26.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -178,11 +187,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="OTx-lc-MtU" secondAttribute="trailing" id="7TN-uP-SjR"/>
+                            <constraint firstItem="R8e-QK-Ej9" firstAttribute="top" secondItem="jT9-Td-crh" secondAttribute="bottom" constant="8" id="APY-Vr-HpJ"/>
                             <constraint firstItem="MBa-4a-WTF" firstAttribute="top" secondItem="lZ7-Q5-ZJC" secondAttribute="bottom" constant="10" id="Eea-77-KdV"/>
                             <constraint firstItem="YRf-34-5am" firstAttribute="leading" secondItem="HNa-sT-xRn" secondAttribute="leadingMargin" id="F0T-QY-uAx"/>
                             <constraint firstItem="OTx-lc-MtU" firstAttribute="top" secondItem="YRf-34-5am" secondAttribute="bottom" constant="8" id="Iur-hO-Suq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8me-R3-eKh" secondAttribute="trailing" id="Q5g-QZ-lvj"/>
+                            <constraint firstItem="R8e-QK-Ej9" firstAttribute="leading" secondItem="HNa-sT-xRn" secondAttribute="leadingMargin" id="Qkq-8R-yHg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lZ7-Q5-ZJC" secondAttribute="trailing" constant="-10" id="UXK-On-Yux"/>
+                            <constraint firstItem="R8e-QK-Ej9" firstAttribute="centerX" secondItem="HNa-sT-xRn" secondAttribute="centerX" id="XOv-Nk-fTS"/>
                             <constraint firstItem="lZ7-Q5-ZJC" firstAttribute="leading" secondItem="HNa-sT-xRn" secondAttribute="leadingMargin" constant="-10" id="Z6E-ty-Lgw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ajz-3B-xJ1" secondAttribute="trailing" id="ZeB-EA-uZC"/>
                             <constraint firstItem="YRf-34-5am" firstAttribute="top" secondItem="ajz-3B-xJ1" secondAttribute="bottom" constant="8" id="bbw-JW-nxL"/>
@@ -192,10 +204,16 @@
                             <constraint firstItem="OTx-lc-MtU" firstAttribute="leading" secondItem="HNa-sT-xRn" secondAttribute="leadingMargin" id="rIr-EN-Mvo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jT9-Td-crh" secondAttribute="trailing" id="tpi-CO-FBC"/>
                             <constraint firstItem="8me-R3-eKh" firstAttribute="top" secondItem="MjW-mA-90E" secondAttribute="bottom" constant="20" id="uDb-ME-Mm2"/>
+                            <constraint firstItem="lZ7-Q5-ZJC" firstAttribute="top" secondItem="R8e-QK-Ej9" secondAttribute="bottom" constant="8" id="v3s-I6-1OK"/>
                             <constraint firstItem="8me-R3-eKh" firstAttribute="leading" secondItem="HNa-sT-xRn" secondAttribute="leadingMargin" id="wag-wT-4xN"/>
                             <constraint firstItem="jT9-Td-crh" firstAttribute="top" secondItem="OTx-lc-MtU" secondAttribute="bottom" constant="8" id="xSY-Pa-mCJ"/>
                             <constraint firstItem="ajz-3B-xJ1" firstAttribute="leading" secondItem="HNa-sT-xRn" secondAttribute="leadingMargin" id="zqd-iQ-YYs"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Qkq-8R-yHg"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="YRf-34-5am" id="dOu-vQ-ufN"/>
@@ -206,6 +224,7 @@
                         <outlet property="speakerBioLabel" destination="zlc-1X-KvL" id="ia8-AU-vPl"/>
                         <outlet property="speakerNameLabel" destination="3NI-RF-vXO" id="pAx-FE-N4j"/>
                         <outlet property="timeLabel" destination="OTx-lc-MtU" id="8uB-eb-06Y"/>
+                        <outlet property="videoContainerView" destination="R8e-QK-Ej9" id="aRw-ZM-UkA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o16-dF-yl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -341,11 +360,19 @@
                             <constraint firstItem="xAh-eE-5qi" firstAttribute="leading" secondItem="3gA-QL-rbZ" secondAttribute="leading" constant="20" id="vpf-u5-GeL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Kyx-OI-9MT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="jii-ae-UTr">
+                            <connections>
+                                <action selector="play" destination="Zkq-g5-hZc" id="xoc-ch-nla"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="xAh-eE-5qi" id="pQe-cv-MAt"/>
                         <outlet property="detailsLabel" destination="c5j-Vm-PIl" id="G9y-6d-aEQ"/>
                         <outlet property="locationLabel" destination="cwg-6X-Zpg" id="bMa-DX-8eF"/>
                         <outlet property="nameLabel" destination="ues-np-hMf" id="K1U-9Q-68o"/>
+                        <outlet property="playButton" destination="jii-ae-UTr" id="g6Y-1m-12M"/>
                         <outlet property="timeLabel" destination="q65-fV-zql" id="lag-f9-zRU"/>
                     </connections>
                 </viewController>

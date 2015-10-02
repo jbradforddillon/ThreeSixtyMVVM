@@ -61,6 +61,7 @@ class TalkDetailsViewModel: ViewModel, TalkDetailsViewModelProtocol {
         talkLocation = Dynamic<String>(talk.location ?? "")
         talkDate = Dynamic<String>("")
         talkTime = Dynamic<String>("")
+        talkStreamURL = Dynamic<NSURL?>(nil)
         
         _speakerDetailsViewModel = SpeakerDetailsViewModel(store: s)
         
@@ -77,6 +78,7 @@ class TalkDetailsViewModel: ViewModel, TalkDetailsViewModelProtocol {
             self.talkTitle.value = talk.name ?? ""
             self.talkDescription.value = talk.details ?? ""
             self.talkLocation.value = talk.location ?? ""
+            self.talkStreamURL.value = NSURL(string: "https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8")
 
             if let date = talk.date {
                 self.talkDate.value = self.dateFormatter.stringFromDate(date)
@@ -95,6 +97,7 @@ class TalkDetailsViewModel: ViewModel, TalkDetailsViewModelProtocol {
     let talkLocation: Dynamic<String>
     let talkDate: Dynamic<String>
     let talkTime: Dynamic<String>
+    let talkStreamURL: Dynamic<NSURL?>
     
     lazy var dateFormatter: NSDateFormatter = {
         let formatter = NSDateFormatter()

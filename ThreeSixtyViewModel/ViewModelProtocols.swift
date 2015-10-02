@@ -29,6 +29,7 @@ protocol TalkDetailsViewModelProtocol: Refreshable {
     var talkLocation: Dynamic<String> { get }
     var talkDate: Dynamic<String> { get }
     var talkTime: Dynamic<String> { get }
+    var talkStreamURL: Dynamic<NSURL?> { get }
     var speakerDetailsViewModel: SpeakerDetailsViewModelProtocol { get }
 }
 
