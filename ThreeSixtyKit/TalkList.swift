@@ -12,6 +12,8 @@ public class TalkListViewModel: TalkListViewModelProtocol {
     private var talks = [Talk]()
     private let store: Store
     
+    public var date: NSDate?
+    
     public init(store s: Store) {
         store = s
     }
@@ -24,6 +26,12 @@ public class TalkListViewModel: TalkListViewModelProtocol {
     }
     
     public func numberOfTalks() -> Int {
+        
+        // TODO: Stubbed implementation. This limits talks to "today's talks"
+        if let _ = date {
+            return min(talks.count, 3)
+        }
+        
         return talks.count
     }
     

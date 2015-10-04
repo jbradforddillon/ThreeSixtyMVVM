@@ -74,6 +74,13 @@
 			remoteGlobalIDString = 756330441BC1D90900489D45;
 			remoteInfo = ThreeSixtyKit;
 		};
+		756330911BC1F31500489D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 756330441BC1D90900489D45;
+			remoteInfo = ThreeSixtyKit;
+		};
 		7577E40E1BA4B64F0022DBD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
@@ -364,6 +371,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				756330921BC1F31500489D45 /* PBXTargetDependency */,
 			);
 			name = TodayExtension;
 			productName = TodayExtension;
@@ -624,6 +632,11 @@
 			target = 756330441BC1D90900489D45 /* ThreeSixtyKit */;
 			targetProxy = 756330581BC1D90900489D45 /* PBXContainerItemProxy */;
 		};
+		756330921BC1F31500489D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 756330441BC1D90900489D45 /* ThreeSixtyKit */;
+			targetProxy = 756330911BC1F31500489D45 /* PBXContainerItemProxy */;
+		};
 		7577E40F1BA4B64F0022DBD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7577E3F51BA4B64F0022DBD9 /* ThreeSixtyViewModel */;
@@ -880,6 +893,7 @@
 				7563303E1BC1D8D900489D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7563305C1BC1D90900489D45 /* Build configuration list for PBXNativeTarget "ThreeSixtyKit" */ = {
 			isa = XCConfigurationList;
@@ -888,6 +902,7 @@
 				7563305E1BC1D90900489D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		756330601BC1D90900489D45 /* Build configuration list for PBXNativeTarget "ThreeSixtyKitTests" */ = {
 			isa = XCConfigurationList;
@@ -896,6 +911,7 @@
 				756330621BC1D90900489D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7577E3F11BA4B64F0022DBD9 /* Build configuration list for PBXProject "ThreeSixtyViewModel" */ = {
 			isa = XCConfigurationList;

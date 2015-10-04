@@ -8,27 +8,54 @@
 
 import UIKit
 import NotificationCenter
+import ThreeSixtyKit
 
-class TodayViewController: UIViewController, NCWidgetProviding {
-        
+class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet var tableView: UITableView!
+    
+    let viewModel = TalkListViewModel(store: Store())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        
+        viewModel.date = NSDate()
+        
+        viewModel.refresh {
+            self.tableView.reloadData()
+        }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+        
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-
-        completionHandler(NCUpdateResult.NewData)
+        viewModel.refresh {
+            self.tableView.reloadData()
+            completionHandler(NCUpdateResult.NewData)
+        }
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfTalks()
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! TodayCell
+        cell.viewModel = viewModel.talkViewModelAtIndex(indexPath.row)
+        return cell
+    }
+}
+
+
+class TodayCell: UITableViewCell {
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var timeLabel: UILabel!
+
+    var viewModel: TalkViewModelProtocol! {
+        didSet {
+            viewModel.talkTitle.bindAndFire { self.titleLabel.text = $0 }
+            viewModel.talkDetailsViewModel.talkDate.bindAndFire { self.timeLabel.text = $0 }
+            viewModel.talkDetailsViewModel.talkLocation.bindAndFire { self.locationLabel.text = $0 }
+            
+            viewModel.talkDetailsViewModel.refresh(nil)
+        }
+    }
 }

@@ -14,6 +14,7 @@ public protocol Refreshable {
 }
 
 public protocol TalkListViewModelProtocol: Refreshable {
+    var date: NSDate? { get }
     func numberOfTalks() -> Int
     func talkViewModelAtIndex(index: Int) -> TalkViewModelProtocol
 }
