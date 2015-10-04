@@ -9,16 +9,14 @@
 import CoreData
 import UIKit
 
-class ViewModel {
-    let store: Store
+class TalkListViewModel: TalkListViewModelProtocol {
+    private var talks = [Talk]()
+    private let store: Store
+    
     init(store s: Store) {
         store = s
     }
-}
 
-class TalkListViewModel: ViewModel, TalkListViewModelProtocol {
-    private var talks = [Talk]()
-    
     func refresh(completion: (() -> Void)?) {
         fetchTalks(store) { (newTalks) -> Void in
             self.talks = newTalks
@@ -35,13 +33,14 @@ class TalkListViewModel: ViewModel, TalkListViewModelProtocol {
     }
 }
 
-class TalkRowViewModel: ViewModel, TalkViewModelProtocol {
+class TalkRowViewModel: TalkViewModelProtocol {
     private let talk: Talk
-    
+    private let store: Store
+
     init(store s: Store, talk t: Talk) {
+        store = s
         talk = t
         talkTitle = Dynamic<String>(talk.name ?? "")
-        super.init(store: s)
     }
     
     let talkTitle: Dynamic<String>
@@ -51,11 +50,14 @@ class TalkRowViewModel: ViewModel, TalkViewModelProtocol {
     }()
 }
 
-class TalkDetailsViewModel: ViewModel, TalkDetailsViewModelProtocol {
+class TalkDetailsViewModel: TalkDetailsViewModelProtocol {
     private let talk: Talk
+    private let store: Store
     
     init(store s: Store, talk t: Talk) {
+        store = s
         talk = t
+        
         talkTitle = Dynamic<String>(talk.name ?? "")
         talkDescription = Dynamic<String>(talk.details ?? "")
         talkLocation = Dynamic<String>(talk.location ?? "")
@@ -63,8 +65,6 @@ class TalkDetailsViewModel: ViewModel, TalkDetailsViewModelProtocol {
         talkTime = Dynamic<String>("")
         
         _speakerDetailsViewModel = SpeakerDetailsViewModel(store: s)
-        
-        super.init(store: s)
         
         if let date = talk.date {
             self.talkDate.value = self.dateFormatter.stringFromDate(date) ?? ""
@@ -116,8 +116,13 @@ class TalkDetailsViewModel: ViewModel, TalkDetailsViewModelProtocol {
     }
 }
 
-class SpeakerListViewModel: ViewModel, SpeakerListViewModelProtocol {
+class SpeakerListViewModel: SpeakerListViewModelProtocol {
     private var speakers = [Speaker]()
+    private let store: Store
+    
+    init(store s: Store) {
+        store = s
+    }
     
     func refresh(completion: (() -> Void)?) {
         fetchSpeakers(store) { (newSpeakers) -> Void in
@@ -135,13 +140,15 @@ class SpeakerListViewModel: ViewModel, SpeakerListViewModelProtocol {
     }
 }
 
-class SpeakerViewModel: ViewModel, SpeakerViewModelProtocol {
+class SpeakerViewModel: SpeakerViewModelProtocol {
     private let speaker: Speaker
+    private let store: Store
     
-    init(store: Store, speaker s: Speaker) {
-        speaker = s
-        super.init(store: store)
-        speakerName.value = s.name ?? ""
+    init(store s: Store, speaker sp: Speaker) {
+        store = s
+        speaker = sp
+
+        speakerName.value = sp.name ?? ""
     }
     
     let speakerName = Dynamic<String>("")
@@ -153,7 +160,8 @@ class SpeakerViewModel: ViewModel, SpeakerViewModelProtocol {
     }()
 }
 
-class SpeakerDetailsViewModel: ViewModel, SpeakerDetailsViewModelProtocol {
+class SpeakerDetailsViewModel: SpeakerDetailsViewModelProtocol {
+    private let store: Store
     var speaker: Speaker? {
         didSet {
             (talkListViewModel as! SpeakerTalkListViewModel).speaker = speaker
@@ -161,11 +169,12 @@ class SpeakerDetailsViewModel: ViewModel, SpeakerDetailsViewModelProtocol {
         }
     }
     
-    override init(store: Store) {
+    init(store s: Store) {
+        store = s
+        
         speakerName = Dynamic<String>("")
         speakerBio = Dynamic<String>("")
         speakerProfileImage = Dynamic<UIImage?>(nil)
-        super.init(store: store)
     }
     
     func refresh(completion: (() -> Void)?) {
