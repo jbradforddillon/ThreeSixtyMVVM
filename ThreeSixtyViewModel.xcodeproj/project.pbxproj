@@ -13,30 +13,67 @@
 		752836CD1BB03BB2005ABA0E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836CC1BB03BB2005ABA0E /* PageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		753D6B641BB0E0D000726540 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B631BB0E0D000726540 /* TalkViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		753D6B661BB0E1F900726540 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B651BB0E1F900726540 /* SpeakerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7563301A1BC1D31300489D45 /* TalkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330191BC1D31300489D45 /* TalkList.swift */; settings = {ASSET_TAGS = (); }; };
-		7563301C1BC1D34900489D45 /* TalkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301B1BC1D34900489D45 /* TalkDetails.swift */; settings = {ASSET_TAGS = (); }; };
-		7563301E1BC1D36200489D45 /* SpeakerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301D1BC1D36200489D45 /* SpeakerList.swift */; settings = {ASSET_TAGS = (); }; };
-		756330201BC1D38000489D45 /* SpeakerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301F1BC1D38000489D45 /* SpeakerDetails.swift */; settings = {ASSET_TAGS = (); }; };
-		756330271BC1D54900489D45 /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330261BC1D54900489D45 /* Parsers.swift */; settings = {ASSET_TAGS = (); }; };
-		756330291BC1D7D800489D45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330281BC1D7D800489D45 /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		756330311BC1D8D900489D45 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756330301BC1D8D900489D45 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		756330341BC1D8D900489D45 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330331BC1D8D900489D45 /* TodayViewController.swift */; };
+		756330371BC1D8D900489D45 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756330351BC1D8D900489D45 /* MainInterface.storyboard */; };
+		7563303B1BC1D8D900489D45 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7563302E1BC1D8D900489D45 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		756330481BC1D90900489D45 /* ThreeSixtyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 756330471BC1D90900489D45 /* ThreeSixtyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7563304F1BC1D90900489D45 /* ThreeSixtyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756330451BC1D90900489D45 /* ThreeSixtyKit.framework */; settings = {ASSET_TAGS = (); }; };
+		756330561BC1D90900489D45 /* ThreeSixtyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330551BC1D90900489D45 /* ThreeSixtyKitTests.swift */; };
+		7563305A1BC1D90900489D45 /* ThreeSixtyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756330451BC1D90900489D45 /* ThreeSixtyKit.framework */; };
+		7563305B1BC1D90900489D45 /* ThreeSixtyKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756330451BC1D90900489D45 /* ThreeSixtyKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		756330741BC1D96A00489D45 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330631BC1D96900489D45 /* Dynamic.swift */; settings = {ASSET_TAGS = (); }; };
+		756330751BC1D96A00489D45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330641BC1D96900489D45 /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		756330761BC1D96A00489D45 /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330651BC1D96900489D45 /* Parsers.swift */; settings = {ASSET_TAGS = (); }; };
+		756330771BC1D96A00489D45 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330661BC1D96900489D45 /* Services.swift */; settings = {ASSET_TAGS = (); }; };
+		756330781BC1D96A00489D45 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330671BC1D96900489D45 /* Speaker.swift */; settings = {ASSET_TAGS = (); }; };
+		756330791BC1D96A00489D45 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330681BC1D96900489D45 /* Speaker+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		7563307A1BC1D96A00489D45 /* SpeakerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330691BC1D96900489D45 /* SpeakerDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		7563307B1BC1D96A00489D45 /* SpeakerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563306A1BC1D96900489D45 /* SpeakerList.swift */; settings = {ASSET_TAGS = (); }; };
+		7563307C1BC1D96A00489D45 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563306B1BC1D96900489D45 /* Store.swift */; settings = {ASSET_TAGS = (); }; };
+		7563307F1BC1D96A00489D45 /* TalkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563306E1BC1D96900489D45 /* TalkDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		756330801BC1D96A00489D45 /* TalkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563306F1BC1D96900489D45 /* TalkList.swift */; settings = {ASSET_TAGS = (); }; };
+		756330831BC1D96A00489D45 /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330731BC1D96A00489D45 /* ViewModelProtocols.swift */; settings = {ASSET_TAGS = (); }; };
+		7563308C1BC1E0B300489D45 /* Talk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563308A1BC1E0B300489D45 /* Talk+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		7563308D1BC1E0B300489D45 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563308B1BC1E0B300489D45 /* Talk.swift */; settings = {ASSET_TAGS = (); }; };
+		7563308F1BC1E22300489D45 /* ThreeSixtyViewModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7563308E1BC1E22300489D45 /* ThreeSixtyViewModel.xcdatamodel */; settings = {ASSET_TAGS = (); }; };
 		7577E4041BA4B64F0022DBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4031BA4B64F0022DBD9 /* Assets.xcassets */; };
 		7577E4071BA4B64F0022DBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */; };
 		7577E4121BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4111BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift */; };
-		7577E4261BA4B6F10022DBD9 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41C1BA4B6F10022DBD9 /* Services.swift */; };
-		7577E4271BA4B6F10022DBD9 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41D1BA4B6F10022DBD9 /* Speaker.swift */; };
-		7577E4281BA4B6F10022DBD9 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41E1BA4B6F10022DBD9 /* Talk.swift */; };
-		7577E4291BA4B6F10022DBD9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E41F1BA4B6F10022DBD9 /* Store.swift */; };
-		7577E42A1BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */; };
-		7577E42B1BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */; };
-		7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */; };
 		7577E42D1BA4B6F10022DBD9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4231BA4B6F10022DBD9 /* Main.swift */; };
 		7577E42E1BA4B6F10022DBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4241BA4B6F10022DBD9 /* Main.storyboard */; };
-		7577E4331BA4D18E0022DBD9 /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */; };
-		7577E4371BA4DC9C0022DBD9 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */; };
 		7577E4391BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4381BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		756330391BC1D8D900489D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7563302D1BC1D8D900489D45;
+			remoteInfo = TodayExtension;
+		};
+		756330501BC1D90900489D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 756330441BC1D90900489D45;
+			remoteInfo = ThreeSixtyKit;
+		};
+		756330521BC1D90900489D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7577E3F51BA4B64F0022DBD9;
+			remoteInfo = ThreeSixtyViewModel;
+		};
+		756330581BC1D90900489D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 756330441BC1D90900489D45;
+			remoteInfo = ThreeSixtyKit;
+		};
 		7577E40E1BA4B64F0022DBD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7577E3EE1BA4B64F0022DBD9 /* Project object */;
@@ -46,6 +83,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7563303F1BC1D8D900489D45 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7563303B1BC1D8D900489D45 /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7563305F1BC1D90900489D45 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7563305B1BC1D90900489D45 /* ThreeSixtyKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		752836BE1BAF074D005ABA0E /* TalksPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksPageViewController.swift; sourceTree = "<group>"; };
 		752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListViewController.swift; sourceTree = "<group>"; };
@@ -53,12 +115,32 @@
 		752836CC1BB03BB2005ABA0E /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		753D6B631BB0E0D000726540 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		753D6B651BB0E1F900726540 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
-		756330191BC1D31300489D45 /* TalkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkList.swift; sourceTree = "<group>"; };
-		7563301B1BC1D34900489D45 /* TalkDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetails.swift; sourceTree = "<group>"; };
-		7563301D1BC1D36200489D45 /* SpeakerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerList.swift; sourceTree = "<group>"; };
-		7563301F1BC1D38000489D45 /* SpeakerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetails.swift; sourceTree = "<group>"; };
-		756330261BC1D54900489D45 /* Parsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsers.swift; sourceTree = "<group>"; };
-		756330281BC1D7D800489D45 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7563302E1BC1D8D900489D45 /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		756330301BC1D8D900489D45 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		756330331BC1D8D900489D45 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		756330361BC1D8D900489D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		756330381BC1D8D900489D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756330451BC1D90900489D45 /* ThreeSixtyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThreeSixtyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		756330471BC1D90900489D45 /* ThreeSixtyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeSixtyKit.h; sourceTree = "<group>"; };
+		756330491BC1D90900489D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7563304E1BC1D90900489D45 /* ThreeSixtyKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeSixtyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		756330551BC1D90900489D45 /* ThreeSixtyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSixtyKitTests.swift; sourceTree = "<group>"; };
+		756330571BC1D90900489D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756330631BC1D96900489D45 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		756330641BC1D96900489D45 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		756330651BC1D96900489D45 /* Parsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsers.swift; sourceTree = "<group>"; };
+		756330661BC1D96900489D45 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		756330671BC1D96900489D45 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		756330681BC1D96900489D45 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		756330691BC1D96900489D45 /* SpeakerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetails.swift; sourceTree = "<group>"; };
+		7563306A1BC1D96900489D45 /* SpeakerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerList.swift; sourceTree = "<group>"; };
+		7563306B1BC1D96900489D45 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7563306E1BC1D96900489D45 /* TalkDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetails.swift; sourceTree = "<group>"; };
+		7563306F1BC1D96900489D45 /* TalkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkList.swift; sourceTree = "<group>"; };
+		756330731BC1D96A00489D45 /* ViewModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
+		7563308A1BC1E0B300489D45 /* Talk+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7563308B1BC1E0B300489D45 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		7563308E1BC1E22300489D45 /* ThreeSixtyViewModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreeSixtyViewModel.xcdatamodel; sourceTree = "<group>"; };
 		7577E3F61BA4B64F0022DBD9 /* ThreeSixtyViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSixtyViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7577E4031BA4B64F0022DBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7577E4061BA4B64F0022DBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,25 +148,40 @@
 		7577E40D1BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeSixtyViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7577E4111BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSixtyServiceTests.swift; sourceTree = "<group>"; };
 		7577E4131BA4B64F0022DBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7577E41C1BA4B6F10022DBD9 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		7577E41D1BA4B6F10022DBD9 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
-		7577E41E1BA4B6F10022DBD9 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
-		7577E41F1BA4B6F10022DBD9 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreeSixtyViewModel.xcdatamodel; sourceTree = "<group>"; };
 		7577E4231BA4B6F10022DBD9 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		7577E4241BA4B6F10022DBD9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
-		7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		7577E4381BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeSixtyViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7563302B1BC1D8D900489D45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756330311BC1D8D900489D45 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756330411BC1D90900489D45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7563304B1BC1D90900489D45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7563304F1BC1D90900489D45 /* ThreeSixtyKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7577E3F31BA4B64F0022DBD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7563305A1BC1D90900489D45 /* ThreeSixtyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,18 +195,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		756330231BC1D49100489D45 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */,
-				756330191BC1D31300489D45 /* TalkList.swift */,
-				7563301B1BC1D34900489D45 /* TalkDetails.swift */,
-				7563301D1BC1D36200489D45 /* SpeakerList.swift */,
-				7563301F1BC1D38000489D45 /* SpeakerDetails.swift */,
-			);
-			name = "View Models";
-			sourceTree = "<group>";
-		};
 		756330241BC1D4AB00489D45 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +208,79 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		756330251BC1D4FB00489D45 /* Util */ = {
+		7563302F1BC1D8D900489D45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */,
-				756330281BC1D7D800489D45 /* Extensions.swift */,
+				756330301BC1D8D900489D45 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		756330321BC1D8D900489D45 /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				756330331BC1D8D900489D45 /* TodayViewController.swift */,
+				756330351BC1D8D900489D45 /* MainInterface.storyboard */,
+				756330381BC1D8D900489D45 /* Info.plist */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		756330461BC1D90900489D45 /* ThreeSixtyKit */ = {
+			isa = PBXGroup;
+			children = (
+				756330851BC1D99400489D45 /* Util */,
+				756330841BC1D98A00489D45 /* Model */,
+				756330861BC1D9B300489D45 /* View Models */,
+				756330471BC1D90900489D45 /* ThreeSixtyKit.h */,
+				756330491BC1D90900489D45 /* Info.plist */,
+			);
+			path = ThreeSixtyKit;
+			sourceTree = "<group>";
+		};
+		756330541BC1D90900489D45 /* ThreeSixtyKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				756330551BC1D90900489D45 /* ThreeSixtyKitTests.swift */,
+				756330571BC1D90900489D45 /* Info.plist */,
+			);
+			path = ThreeSixtyKitTests;
+			sourceTree = "<group>";
+		};
+		756330841BC1D98A00489D45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				756330651BC1D96900489D45 /* Parsers.swift */,
+				756330661BC1D96900489D45 /* Services.swift */,
+				756330671BC1D96900489D45 /* Speaker.swift */,
+				756330681BC1D96900489D45 /* Speaker+CoreDataProperties.swift */,
+				7563306B1BC1D96900489D45 /* Store.swift */,
+				7563308A1BC1E0B300489D45 /* Talk+CoreDataProperties.swift */,
+				7563308B1BC1E0B300489D45 /* Talk.swift */,
+				7563308E1BC1E22300489D45 /* ThreeSixtyViewModel.xcdatamodel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		756330851BC1D99400489D45 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				756330631BC1D96900489D45 /* Dynamic.swift */,
+				756330641BC1D96900489D45 /* Extensions.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		756330861BC1D9B300489D45 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				756330691BC1D96900489D45 /* SpeakerDetails.swift */,
+				7563306A1BC1D96900489D45 /* SpeakerList.swift */,
+				7563306E1BC1D96900489D45 /* TalkDetails.swift */,
+				7563306F1BC1D96900489D45 /* TalkList.swift */,
+				756330731BC1D96A00489D45 /* ViewModelProtocols.swift */,
+			);
+			name = "View Models";
 			sourceTree = "<group>";
 		};
 		7577E3ED1BA4B64F0022DBD9 = {
@@ -137,6 +288,10 @@
 			children = (
 				7577E3F81BA4B64F0022DBD9 /* ThreeSixtyViewModel */,
 				7577E4101BA4B64F0022DBD9 /* ThreeSixtyViewModelTests */,
+				756330321BC1D8D900489D45 /* TodayExtension */,
+				756330461BC1D90900489D45 /* ThreeSixtyKit */,
+				756330541BC1D90900489D45 /* ThreeSixtyKitTests */,
+				7563302F1BC1D8D900489D45 /* Frameworks */,
 				7577E3F71BA4B64F0022DBD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +301,9 @@
 			children = (
 				7577E3F61BA4B64F0022DBD9 /* ThreeSixtyViewModel.app */,
 				7577E40D1BA4B64F0022DBD9 /* ThreeSixtyViewModelTests.xctest */,
+				7563302E1BC1D8D900489D45 /* TodayExtension.appex */,
+				756330451BC1D90900489D45 /* ThreeSixtyKit.framework */,
+				7563304E1BC1D90900489D45 /* ThreeSixtyKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,11 +313,8 @@
 			children = (
 				7577E4231BA4B6F10022DBD9 /* Main.swift */,
 				7577E4241BA4B6F10022DBD9 /* Main.storyboard */,
-				7577E4311BA4B72B0022DBD9 /* Model */,
 				7577E4301BA4B7150022DBD9 /* Resources */,
-				756330231BC1D49100489D45 /* View Models */,
 				756330241BC1D4AB00489D45 /* View Controllers */,
-				756330251BC1D4FB00489D45 /* Util */,
 			);
 			path = ThreeSixtyViewModel;
 			sourceTree = "<group>";
@@ -177,9 +332,6 @@
 		7577E4301BA4B7150022DBD9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */,
-				7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */,
-				7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */,
 				7577E4031BA4B64F0022DBD9 /* Assets.xcassets */,
 				7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */,
 				7577E4081BA4B64F0022DBD9 /* Info.plist */,
@@ -187,21 +339,74 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		7577E4311BA4B72B0022DBD9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7577E41C1BA4B6F10022DBD9 /* Services.swift */,
-				7577E41F1BA4B6F10022DBD9 /* Store.swift */,
-				7577E41D1BA4B6F10022DBD9 /* Speaker.swift */,
-				7577E41E1BA4B6F10022DBD9 /* Talk.swift */,
-				756330261BC1D54900489D45 /* Parsers.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		756330421BC1D90900489D45 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756330481BC1D90900489D45 /* ThreeSixtyKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7563302D1BC1D8D900489D45 /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7563303C1BC1D8D900489D45 /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				7563302A1BC1D8D900489D45 /* Sources */,
+				7563302B1BC1D8D900489D45 /* Frameworks */,
+				7563302C1BC1D8D900489D45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = 7563302E1BC1D8D900489D45 /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		756330441BC1D90900489D45 /* ThreeSixtyKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7563305C1BC1D90900489D45 /* Build configuration list for PBXNativeTarget "ThreeSixtyKit" */;
+			buildPhases = (
+				756330401BC1D90900489D45 /* Sources */,
+				756330411BC1D90900489D45 /* Frameworks */,
+				756330421BC1D90900489D45 /* Headers */,
+				756330431BC1D90900489D45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeSixtyKit;
+			productName = ThreeSixtyKit;
+			productReference = 756330451BC1D90900489D45 /* ThreeSixtyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7563304D1BC1D90900489D45 /* ThreeSixtyKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756330601BC1D90900489D45 /* Build configuration list for PBXNativeTarget "ThreeSixtyKitTests" */;
+			buildPhases = (
+				7563304A1BC1D90900489D45 /* Sources */,
+				7563304B1BC1D90900489D45 /* Frameworks */,
+				7563304C1BC1D90900489D45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				756330511BC1D90900489D45 /* PBXTargetDependency */,
+				756330531BC1D90900489D45 /* PBXTargetDependency */,
+			);
+			name = ThreeSixtyKitTests;
+			productName = ThreeSixtyKitTests;
+			productReference = 7563304E1BC1D90900489D45 /* ThreeSixtyKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7577E3F51BA4B64F0022DBD9 /* ThreeSixtyViewModel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7577E4161BA4B64F0022DBD9 /* Build configuration list for PBXNativeTarget "ThreeSixtyViewModel" */;
@@ -209,10 +414,14 @@
 				7577E3F21BA4B64F0022DBD9 /* Sources */,
 				7577E3F31BA4B64F0022DBD9 /* Frameworks */,
 				7577E3F41BA4B64F0022DBD9 /* Resources */,
+				7563303F1BC1D8D900489D45 /* Embed App Extensions */,
+				7563305F1BC1D90900489D45 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7563303A1BC1D8D900489D45 /* PBXTargetDependency */,
+				756330591BC1D90900489D45 /* PBXTargetDependency */,
 			);
 			name = ThreeSixtyViewModel;
 			productName = ThreeSixtyViewModel;
@@ -247,6 +456,16 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "POSSIBLE Mobile";
 				TargetAttributes = {
+					7563302D1BC1D8D900489D45 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					756330441BC1D90900489D45 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7563304D1BC1D90900489D45 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7577E3F51BA4B64F0022DBD9;
+					};
 					7577E3F51BA4B64F0022DBD9 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -271,11 +490,36 @@
 			targets = (
 				7577E3F51BA4B64F0022DBD9 /* ThreeSixtyViewModel */,
 				7577E40C1BA4B64F0022DBD9 /* ThreeSixtyViewModelTests */,
+				7563302D1BC1D8D900489D45 /* TodayExtension */,
+				756330441BC1D90900489D45 /* ThreeSixtyKit */,
+				7563304D1BC1D90900489D45 /* ThreeSixtyKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7563302C1BC1D8D900489D45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756330371BC1D8D900489D45 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756330431BC1D90900489D45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7563304C1BC1D90900489D45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7577E3F41BA4B64F0022DBD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,31 +540,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7563302A1BC1D8D900489D45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756330341BC1D8D900489D45 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756330401BC1D90900489D45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756330741BC1D96A00489D45 /* Dynamic.swift in Sources */,
+				7563308C1BC1E0B300489D45 /* Talk+CoreDataProperties.swift in Sources */,
+				756330771BC1D96A00489D45 /* Services.swift in Sources */,
+				7563307F1BC1D96A00489D45 /* TalkDetails.swift in Sources */,
+				756330781BC1D96A00489D45 /* Speaker.swift in Sources */,
+				756330831BC1D96A00489D45 /* ViewModelProtocols.swift in Sources */,
+				7563307C1BC1D96A00489D45 /* Store.swift in Sources */,
+				7563308D1BC1E0B300489D45 /* Talk.swift in Sources */,
+				7563307B1BC1D96A00489D45 /* SpeakerList.swift in Sources */,
+				7563307A1BC1D96A00489D45 /* SpeakerDetails.swift in Sources */,
+				756330761BC1D96A00489D45 /* Parsers.swift in Sources */,
+				756330791BC1D96A00489D45 /* Speaker+CoreDataProperties.swift in Sources */,
+				756330751BC1D96A00489D45 /* Extensions.swift in Sources */,
+				7563308F1BC1E22300489D45 /* ThreeSixtyViewModel.xcdatamodel in Sources */,
+				756330801BC1D96A00489D45 /* TalkList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7563304A1BC1D90900489D45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756330561BC1D90900489D45 /* ThreeSixtyKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7577E3F21BA4B64F0022DBD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7577E4331BA4D18E0022DBD9 /* ViewModelProtocols.swift in Sources */,
 				752836BF1BAF074D005ABA0E /* TalksPageViewController.swift in Sources */,
 				7577E42D1BA4B6F10022DBD9 /* Main.swift in Sources */,
-				7577E4261BA4B6F10022DBD9 /* Services.swift in Sources */,
 				753D6B641BB0E0D000726540 /* TalkViewController.swift in Sources */,
 				753D6B661BB0E1F900726540 /* SpeakerViewController.swift in Sources */,
-				7577E4371BA4DC9C0022DBD9 /* Dynamic.swift in Sources */,
-				7577E4271BA4B6F10022DBD9 /* Speaker.swift in Sources */,
-				7563301C1BC1D34900489D45 /* TalkDetails.swift in Sources */,
-				756330291BC1D7D800489D45 /* Extensions.swift in Sources */,
-				7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */,
-				756330201BC1D38000489D45 /* SpeakerDetails.swift in Sources */,
-				7563301E1BC1D36200489D45 /* SpeakerList.swift in Sources */,
-				7577E42A1BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift in Sources */,
-				7577E42B1BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift in Sources */,
-				7563301A1BC1D31300489D45 /* TalkList.swift in Sources */,
 				752836C11BAF0799005ABA0E /* SpeakerListViewController.swift in Sources */,
-				756330271BC1D54900489D45 /* Parsers.swift in Sources */,
-				7577E4281BA4B6F10022DBD9 /* Talk.swift in Sources */,
 				752836C31BAF07C3005ABA0E /* TalkListViewController.swift in Sources */,
-				7577E4291BA4B6F10022DBD9 /* Store.swift in Sources */,
 				752836CD1BB03BB2005ABA0E /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +604,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7563303A1BC1D8D900489D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7563302D1BC1D8D900489D45 /* TodayExtension */;
+			targetProxy = 756330391BC1D8D900489D45 /* PBXContainerItemProxy */;
+		};
+		756330511BC1D90900489D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 756330441BC1D90900489D45 /* ThreeSixtyKit */;
+			targetProxy = 756330501BC1D90900489D45 /* PBXContainerItemProxy */;
+		};
+		756330531BC1D90900489D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7577E3F51BA4B64F0022DBD9 /* ThreeSixtyViewModel */;
+			targetProxy = 756330521BC1D90900489D45 /* PBXContainerItemProxy */;
+		};
+		756330591BC1D90900489D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 756330441BC1D90900489D45 /* ThreeSixtyKit */;
+			targetProxy = 756330581BC1D90900489D45 /* PBXContainerItemProxy */;
+		};
 		7577E40F1BA4B64F0022DBD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7577E3F51BA4B64F0022DBD9 /* ThreeSixtyViewModel */;
@@ -345,6 +632,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		756330351BC1D8D900489D45 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				756330361BC1D8D900489D45 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,6 +651,91 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7563303D1BC1D8D900489D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyViewModel.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7563303E1BC1D8D900489D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyViewModel.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7563305D1BC1D90900489D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ThreeSixtyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7563305E1BC1D90900489D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ThreeSixtyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		756330611BC1D90900489D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThreeSixtyKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeSixtyViewModel.app/ThreeSixtyViewModel";
+			};
+			name = Debug;
+		};
+		756330621BC1D90900489D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThreeSixtyKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeSixtyViewModel.app/ThreeSixtyViewModel";
+			};
+			name = Release;
+		};
 		7577E4141BA4B64F0022DBD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,6 +824,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ThreeSixtyViewModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyViewModel;
@@ -457,6 +838,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ThreeSixtyViewModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.ThreeSixtyViewModel;
@@ -491,6 +873,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7563303C1BC1D8D900489D45 /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7563303D1BC1D8D900489D45 /* Debug */,
+				7563303E1BC1D8D900489D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7563305C1BC1D90900489D45 /* Build configuration list for PBXNativeTarget "ThreeSixtyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7563305D1BC1D90900489D45 /* Debug */,
+				7563305E1BC1D90900489D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		756330601BC1D90900489D45 /* Build configuration list for PBXNativeTarget "ThreeSixtyKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756330611BC1D90900489D45 /* Debug */,
+				756330621BC1D90900489D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7577E3F11BA4B64F0022DBD9 /* Build configuration list for PBXProject "ThreeSixtyViewModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -8,9 +8,12 @@
 
 import CoreData
 
-class Store {    
+public class Store {
+    public init() {
+    }
+    
     lazy var managedObjectModel: NSManagedObjectModel = {
-        let modelURL = NSBundle.mainBundle().URLForResource("ThreeSixtyViewModel", withExtension: "mom")!
+        let modelURL = NSBundle(identifier: "com.possiblemobile.ThreeSixtyKit")!.URLForResource("ThreeSixtyViewModel", withExtension: "mom")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
         }()
     

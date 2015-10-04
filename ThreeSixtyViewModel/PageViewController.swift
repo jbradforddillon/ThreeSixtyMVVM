@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ThreeSixtyKit
 
 class PageViewController: UIViewController {
     var index: Int = 0

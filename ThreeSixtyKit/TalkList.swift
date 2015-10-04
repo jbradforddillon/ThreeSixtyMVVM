@@ -8,26 +8,26 @@
 
 import Foundation
 
-class TalkListViewModel: TalkListViewModelProtocol {
+public class TalkListViewModel: TalkListViewModelProtocol {
     private var talks = [Talk]()
     private let store: Store
     
-    init(store s: Store) {
+    public init(store s: Store) {
         store = s
     }
     
-    func refresh(completion: (() -> Void)?) {
+    public func refresh(completion: (() -> Void)?) {
         fetchTalks(store) { (newTalks) -> Void in
             self.talks = newTalks
             completion?()
         }
     }
     
-    func numberOfTalks() -> Int {
+    public func numberOfTalks() -> Int {
         return talks.count
     }
     
-    func talkViewModelAtIndex(index: Int) -> TalkViewModelProtocol {
+    public func talkViewModelAtIndex(index: Int) -> TalkViewModelProtocol {
         return TalkRowViewModel(store: store, talk: talks[index])
     }
 }

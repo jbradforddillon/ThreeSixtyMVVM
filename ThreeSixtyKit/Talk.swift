@@ -1,8 +1,8 @@
 //
 //  Talk.swift
-//  360ViewModel
+//  ThreeSixtyViewModel
 //
-//  Created by Brad Dillon on 9/8/15.
+//  Created by Brad Dillon on 10/4/15.
 //  Copyright © 2015 POSSIBLE Mobile. All rights reserved.
 //
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ThreeSixtyKit
 
 class TalkViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!

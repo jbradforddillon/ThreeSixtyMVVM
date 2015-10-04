@@ -9,21 +9,21 @@
 import CoreData
 import UIKit
 
-protocol Refreshable {
+public protocol Refreshable {
     func refresh(completion: (() -> Void)?)
 }
 
-protocol TalkListViewModelProtocol: Refreshable {
+public protocol TalkListViewModelProtocol: Refreshable {
     func numberOfTalks() -> Int
     func talkViewModelAtIndex(index: Int) -> TalkViewModelProtocol
 }
 
-protocol TalkViewModelProtocol {
+public protocol TalkViewModelProtocol {
     var talkTitle: Dynamic<String> { get }
     var talkDetailsViewModel: TalkDetailsViewModelProtocol { get }
 }
 
-protocol TalkDetailsViewModelProtocol: Refreshable {
+public protocol TalkDetailsViewModelProtocol: Refreshable {
     var talkTitle: Dynamic<String> { get }
     var talkDescription: Dynamic<String> { get }
     var talkLocation: Dynamic<String> { get }
@@ -32,22 +32,22 @@ protocol TalkDetailsViewModelProtocol: Refreshable {
     var speakerDetailsViewModel: SpeakerDetailsViewModelProtocol { get }
 }
 
-protocol SpeakerDetailsViewModelProtocol: Refreshable {
+public protocol SpeakerDetailsViewModelProtocol: Refreshable {
     var speakerName: Dynamic<String> { get }
     var speakerBio: Dynamic<String> { get }
     var speakerProfileImage: Dynamic<UIImage?> { get }
     var talkListViewModel: SpeakerTalkListViewModelProtocol { get }
 }
 
-protocol SpeakerTalkListViewModelProtocol: TalkListViewModelProtocol {
+public protocol SpeakerTalkListViewModelProtocol: TalkListViewModelProtocol {
 }
 
-protocol SpeakerListViewModelProtocol: Refreshable {
+public protocol SpeakerListViewModelProtocol: Refreshable {
     func numberOfSpeakers() -> Int
     func speakerViewModelAtIndex(index: Int) -> SpeakerViewModelProtocol
 }
 
-protocol SpeakerViewModelProtocol {
+public protocol SpeakerViewModelProtocol {
     var speakerName: Dynamic<String> { get }
     var speakerDetailsViewModel: SpeakerDetailsViewModelProtocol { get }
 }

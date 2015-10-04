@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7577E3F51BA4B64F0022DBD9"
-               BuildableName = "ThreeSixtyViewModel.app"
-               BlueprintName = "ThreeSixtyViewModel"
+               BlueprintIdentifier = "756330441BC1D90900489D45"
+               BuildableName = "ThreeSixtyKit.framework"
+               BlueprintName = "ThreeSixtyKit"
                ReferencedContainer = "container:ThreeSixtyViewModel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,36 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7577E40C1BA4B64F0022DBD9"
-               BuildableName = "ThreeSixtyViewModelTests.xctest"
-               BlueprintName = "ThreeSixtyViewModelTests"
-               ReferencedContainer = "container:ThreeSixtyViewModel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7563304D1BC1D90900489D45"
-               BuildableName = "ThreeSixtyKitTests.xctest"
-               BlueprintName = "ThreeSixtyKitTests"
-               ReferencedContainer = "container:ThreeSixtyViewModel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7577E3F51BA4B64F0022DBD9"
-            BuildableName = "ThreeSixtyViewModel.app"
-            BlueprintName = "ThreeSixtyViewModel"
-            ReferencedContainer = "container:ThreeSixtyViewModel.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -71,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7577E3F51BA4B64F0022DBD9"
-            BuildableName = "ThreeSixtyViewModel.app"
-            BlueprintName = "ThreeSixtyViewModel"
+            BlueprintIdentifier = "756330441BC1D90900489D45"
+            BuildableName = "ThreeSixtyKit.framework"
+            BlueprintName = "ThreeSixtyKit"
             ReferencedContainer = "container:ThreeSixtyViewModel.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7577E3F51BA4B64F0022DBD9"
-            BuildableName = "ThreeSixtyViewModel.app"
-            BlueprintName = "ThreeSixtyViewModel"
+            BlueprintIdentifier = "756330441BC1D90900489D45"
+            BuildableName = "ThreeSixtyKit.framework"
+            BlueprintName = "ThreeSixtyKit"
             ReferencedContainer = "container:ThreeSixtyViewModel.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
