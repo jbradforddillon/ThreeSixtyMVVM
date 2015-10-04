@@ -18,6 +18,7 @@
 		7563301E1BC1D36200489D45 /* SpeakerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301D1BC1D36200489D45 /* SpeakerList.swift */; settings = {ASSET_TAGS = (); }; };
 		756330201BC1D38000489D45 /* SpeakerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301F1BC1D38000489D45 /* SpeakerDetails.swift */; settings = {ASSET_TAGS = (); }; };
 		756330271BC1D54900489D45 /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330261BC1D54900489D45 /* Parsers.swift */; settings = {ASSET_TAGS = (); }; };
+		756330291BC1D7D800489D45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330281BC1D7D800489D45 /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		7577E4041BA4B64F0022DBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4031BA4B64F0022DBD9 /* Assets.xcassets */; };
 		7577E4071BA4B64F0022DBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */; };
 		7577E4121BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4111BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift */; };
@@ -57,6 +58,7 @@
 		7563301D1BC1D36200489D45 /* SpeakerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerList.swift; sourceTree = "<group>"; };
 		7563301F1BC1D38000489D45 /* SpeakerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetails.swift; sourceTree = "<group>"; };
 		756330261BC1D54900489D45 /* Parsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsers.swift; sourceTree = "<group>"; };
+		756330281BC1D7D800489D45 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7577E3F61BA4B64F0022DBD9 /* ThreeSixtyViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSixtyViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7577E4031BA4B64F0022DBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7577E4061BA4B64F0022DBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */,
+				756330281BC1D7D800489D45 /* Extensions.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				7577E4371BA4DC9C0022DBD9 /* Dynamic.swift in Sources */,
 				7577E4271BA4B6F10022DBD9 /* Speaker.swift in Sources */,
 				7563301C1BC1D34900489D45 /* TalkDetails.swift in Sources */,
+				756330291BC1D7D800489D45 /* Extensions.swift in Sources */,
 				7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */,
 				756330201BC1D38000489D45 /* SpeakerDetails.swift in Sources */,
 				7563301E1BC1D36200489D45 /* SpeakerList.swift in Sources */,
