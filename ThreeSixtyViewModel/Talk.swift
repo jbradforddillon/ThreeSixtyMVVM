@@ -26,26 +26,3 @@ class Talk: NSManagedObject {
         return talk
     }
 }
-
-
-func talkFromDictGenerator(moc: NSManagedObjectContext) -> (([String: String]) -> Talk) {
-    return { (dict) -> Talk in
-        let talk = Talk.withID(dict["id"]!, moc: moc)
-        talk.identifier = dict["id"]
-        talk.name = dict["name"]
-        talk.details = dict["details"]
-        talk.location = dict["location"]
-        
-        if let dateString = dict["date"] {
-            let formatter = NSDateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-            talk.date = formatter.dateFromString(dateString)            
-        }
-        
-        if let speaker = dict["speaker"] {
-            talk.speaker = Speaker.withID(speaker, moc: moc)
-        }
-        
-        return talk
-    }
-}

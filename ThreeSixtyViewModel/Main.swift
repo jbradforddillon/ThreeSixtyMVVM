@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AppDelegate.swift
 //  360ViewModel
 //
 //  Created by Brad Dillon on 9/8/15.
@@ -7,6 +7,14 @@
 //
 
 import UIKit
+import CoreData
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+}
+
+
 
 class ViewController: UIViewController {
     

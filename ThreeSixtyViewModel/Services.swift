@@ -41,7 +41,6 @@ func fetchTalks(store: Store, completion: (([Talk]) -> Void)) {
             try! store.managedObjectContext.save()
             completion(talks)
         }
-        
     }.resume()
 }
 

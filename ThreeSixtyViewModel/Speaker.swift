@@ -26,19 +26,3 @@ class Speaker: NSManagedObject {
         return speaker
     }
 }
-
-func speakerFromDictGenerator(moc: NSManagedObjectContext) -> (([String: AnyObject]) -> Speaker) {
-    return { (dict) -> Speaker in
-        let speaker = Speaker.withID(dict["id"] as! String, moc: moc)
-        speaker.identifier = dict["id"] as? String
-        speaker.name = dict["name"] as? String
-        speaker.bio = dict["bio"] as? String
-        speaker.avatarURL = dict["avatarURL"] as? String
-        
-        if let talks = dict["talks"] as? [String] {
-            speaker.talks = NSSet(array: talks.map { Talk.withID($0, moc: moc) })
-        }
-        
-        return speaker
-    }
-}
