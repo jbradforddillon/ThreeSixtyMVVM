@@ -33,50 +33,49 @@ enum Endpoint {
 }
 
 func fetchTalks(store: Store, completion: (([Talk]) -> Void)) {
-    NSURLSession.sharedSession().dataTaskWithURL(Endpoint.Talks.URL()) { (data, response, error) -> Void in
-        let talkDicts = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [[String: String]]
+    NSURLSession.sharedSession().startDataTaskWithURL(Endpoint.Talks.URL()) { (data, response, error) -> Void in
+        guard let maybe = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as? [[String: String]], talkDicts = maybe else { return }
         
         dispatch_async(dispatch_get_main_queue()) {
             let talks = talkDicts.map(talkFromDictGenerator(store.managedObjectContext))
             try! store.managedObjectContext.save()
             completion(talks)
         }
-        
-    }.resume()
+    }
 }
 
 func fetchSpeakers(store: Store, completion: (([Speaker]) -> Void)) {
-    NSURLSession.sharedSession().dataTaskWithURL(Endpoint.Speakers.URL()) { (data, response, error) -> Void in
-        let speakerDicts = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [[String: AnyObject]]
+    NSURLSession.sharedSession().startDataTaskWithURL(Endpoint.Speakers.URL()) { (data, response, error) -> Void in
+        guard let maybe = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as? [[String: AnyObject]], speakerDicts = maybe else { return }
         
         dispatch_async(dispatch_get_main_queue()) {
             let speakers = speakerDicts.map(speakerFromDictGenerator(store.managedObjectContext))
             try! store.managedObjectContext.save()
             completion(speakers)
         }
-    }.resume()
+    }
 }
 
 func fetchTalk(ID: String, store: Store, completion: ((Talk) -> Void)) {
-    NSURLSession.sharedSession().dataTaskWithURL(Endpoint.Talk(ID).URL()) { (data, response, error) -> Void in
-        let dict = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [String: String]
+    NSURLSession.sharedSession().startDataTaskWithURL(Endpoint.Talk(ID).URL()) { (data, response, error) -> Void in
+        guard let maybe = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as? [String: String], dict = maybe else { return }
         
         dispatch_async(dispatch_get_main_queue()) {
             let talk = talkFromDictGenerator(store.managedObjectContext)(dict)
             try! store.managedObjectContext.save()
             completion(talk)
         }
-    }.resume()
+    }
 }
 
 func fetchSpeaker(ID: String, store: Store, completion: ((Speaker) -> Void)) {
-    NSURLSession.sharedSession().dataTaskWithURL(Endpoint.Speaker(ID).URL()) { (data, response, error) -> Void in
-        let dict = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [String: AnyObject]
+    NSURLSession.sharedSession().startDataTaskWithURL(Endpoint.Speaker(ID).URL()) { (data, response, error) -> Void in
+        guard let maybe = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as? [String: AnyObject], dict = maybe else { return }
         
         dispatch_async(dispatch_get_main_queue()) {
             let speaker = speakerFromDictGenerator(store.managedObjectContext)(dict)
             try! store.managedObjectContext.save()
             completion(speaker)
         }
-    }.resume()
+    }
 }

@@ -11,9 +11,14 @@
 		752836C11BAF0799005ABA0E /* SpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		752836C31BAF07C3005ABA0E /* TalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836C21BAF07C3005ABA0E /* TalkListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		752836CD1BB03BB2005ABA0E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752836CC1BB03BB2005ABA0E /* PageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7531D8A11BBF37DB0047C127 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531D8A01BBF37DB0047C127 /* Util.swift */; settings = {ASSET_TAGS = (); }; };
 		753D6B641BB0E0D000726540 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B631BB0E0D000726540 /* TalkViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		753D6B661BB0E1F900726540 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753D6B651BB0E1F900726540 /* SpeakerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7563301A1BC1D31300489D45 /* TalkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330191BC1D31300489D45 /* TalkList.swift */; settings = {ASSET_TAGS = (); }; };
+		7563301C1BC1D34900489D45 /* TalkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301B1BC1D34900489D45 /* TalkDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		7563301E1BC1D36200489D45 /* SpeakerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301D1BC1D36200489D45 /* SpeakerList.swift */; settings = {ASSET_TAGS = (); }; };
+		756330201BC1D38000489D45 /* SpeakerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563301F1BC1D38000489D45 /* SpeakerDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		756330271BC1D54900489D45 /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330261BC1D54900489D45 /* Parsers.swift */; settings = {ASSET_TAGS = (); }; };
+		756330291BC1D7D800489D45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756330281BC1D7D800489D45 /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		7577E4041BA4B64F0022DBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4031BA4B64F0022DBD9 /* Assets.xcassets */; };
 		7577E4071BA4B64F0022DBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4051BA4B64F0022DBD9 /* LaunchScreen.storyboard */; };
 		7577E4121BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4111BA4B64F0022DBD9 /* ThreeSixtyServiceTests.swift */; };
@@ -24,11 +29,9 @@
 		7577E42A1BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */; };
 		7577E42B1BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */; };
 		7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */; };
-		7577E42D1BA4B6F10022DBD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4231BA4B6F10022DBD9 /* AppDelegate.swift */; };
+		7577E42D1BA4B6F10022DBD9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4231BA4B6F10022DBD9 /* Main.swift */; };
 		7577E42E1BA4B6F10022DBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7577E4241BA4B6F10022DBD9 /* Main.storyboard */; };
-		7577E42F1BA4B6F10022DBD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4251BA4B6F10022DBD9 /* ViewController.swift */; };
 		7577E4331BA4D18E0022DBD9 /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */; };
-		7577E4351BA4D5E30022DBD9 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4341BA4D5E30022DBD9 /* ViewModels.swift */; };
 		7577E4371BA4DC9C0022DBD9 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */; };
 		7577E4391BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7577E4381BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -48,9 +51,14 @@
 		752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListViewController.swift; sourceTree = "<group>"; };
 		752836C21BAF07C3005ABA0E /* TalkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewController.swift; sourceTree = "<group>"; };
 		752836CC1BB03BB2005ABA0E /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		7531D8A01BBF37DB0047C127 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		753D6B631BB0E0D000726540 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		753D6B651BB0E1F900726540 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
+		756330191BC1D31300489D45 /* TalkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkList.swift; sourceTree = "<group>"; };
+		7563301B1BC1D34900489D45 /* TalkDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetails.swift; sourceTree = "<group>"; };
+		7563301D1BC1D36200489D45 /* SpeakerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerList.swift; sourceTree = "<group>"; };
+		7563301F1BC1D38000489D45 /* SpeakerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetails.swift; sourceTree = "<group>"; };
+		756330261BC1D54900489D45 /* Parsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsers.swift; sourceTree = "<group>"; };
+		756330281BC1D7D800489D45 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7577E3F61BA4B64F0022DBD9 /* ThreeSixtyViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSixtyViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7577E4031BA4B64F0022DBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7577E4061BA4B64F0022DBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,11 +73,9 @@
 		7577E4201BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7577E4211BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7577E4221BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreeSixtyViewModel.xcdatamodel; sourceTree = "<group>"; };
-		7577E4231BA4B6F10022DBD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7577E4231BA4B6F10022DBD9 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		7577E4241BA4B6F10022DBD9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7577E4251BA4B6F10022DBD9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
-		7577E4341BA4D5E30022DBD9 /* ViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
 		7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		7577E4381BA5FC2C0022DBD9 /* ThreeSixtyViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeSixtyViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +98,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		756330231BC1D49100489D45 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */,
+				756330191BC1D31300489D45 /* TalkList.swift */,
+				7563301B1BC1D34900489D45 /* TalkDetails.swift */,
+				7563301D1BC1D36200489D45 /* SpeakerList.swift */,
+				7563301F1BC1D38000489D45 /* SpeakerDetails.swift */,
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+		756330241BC1D4AB00489D45 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				752836BE1BAF074D005ABA0E /* TalksPageViewController.swift */,
+				752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */,
+				753D6B651BB0E1F900726540 /* SpeakerViewController.swift */,
+				752836C21BAF07C3005ABA0E /* TalkListViewController.swift */,
+				753D6B631BB0E0D000726540 /* TalkViewController.swift */,
+				752836CC1BB03BB2005ABA0E /* PageViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		756330251BC1D4FB00489D45 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */,
+				756330281BC1D7D800489D45 /* Extensions.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		7577E3ED1BA4B64F0022DBD9 = {
 			isa = PBXGroup;
 			children = (
@@ -113,21 +153,13 @@
 		7577E3F81BA4B64F0022DBD9 /* ThreeSixtyViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7577E4231BA4B6F10022DBD9 /* AppDelegate.swift */,
+				7577E4231BA4B6F10022DBD9 /* Main.swift */,
 				7577E4241BA4B6F10022DBD9 /* Main.storyboard */,
-				7577E4251BA4B6F10022DBD9 /* ViewController.swift */,
 				7577E4311BA4B72B0022DBD9 /* Model */,
 				7577E4301BA4B7150022DBD9 /* Resources */,
-				7577E4321BA4D18E0022DBD9 /* ViewModelProtocols.swift */,
-				7577E4341BA4D5E30022DBD9 /* ViewModels.swift */,
-				7577E4361BA4DC9C0022DBD9 /* Dynamic.swift */,
-				752836BE1BAF074D005ABA0E /* TalksPageViewController.swift */,
-				752836C01BAF0799005ABA0E /* SpeakerListViewController.swift */,
-				753D6B651BB0E1F900726540 /* SpeakerViewController.swift */,
-				752836C21BAF07C3005ABA0E /* TalkListViewController.swift */,
-				753D6B631BB0E0D000726540 /* TalkViewController.swift */,
-				752836CC1BB03BB2005ABA0E /* PageViewController.swift */,
-				7531D8A01BBF37DB0047C127 /* Util.swift */,
+				756330231BC1D49100489D45 /* View Models */,
+				756330241BC1D4AB00489D45 /* View Controllers */,
+				756330251BC1D4FB00489D45 /* Util */,
 			);
 			path = ThreeSixtyViewModel;
 			sourceTree = "<group>";
@@ -162,6 +194,7 @@
 				7577E41F1BA4B6F10022DBD9 /* Store.swift */,
 				7577E41D1BA4B6F10022DBD9 /* Speaker.swift */,
 				7577E41E1BA4B6F10022DBD9 /* Talk.swift */,
+				756330261BC1D54900489D45 /* Parsers.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -176,6 +209,7 @@
 				7577E3F21BA4B64F0022DBD9 /* Sources */,
 				7577E3F31BA4B64F0022DBD9 /* Frameworks */,
 				7577E3F41BA4B64F0022DBD9 /* Resources */,
+				756330901BC1E6C200489D45 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -262,6 +296,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		756330901BC1E6C200489D45 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7577E3F21BA4B64F0022DBD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,19 +319,22 @@
 			files = (
 				7577E4331BA4D18E0022DBD9 /* ViewModelProtocols.swift in Sources */,
 				752836BF1BAF074D005ABA0E /* TalksPageViewController.swift in Sources */,
-				7577E4351BA4D5E30022DBD9 /* ViewModels.swift in Sources */,
-				7577E42D1BA4B6F10022DBD9 /* AppDelegate.swift in Sources */,
+				7577E42D1BA4B6F10022DBD9 /* Main.swift in Sources */,
 				7577E4261BA4B6F10022DBD9 /* Services.swift in Sources */,
 				753D6B641BB0E0D000726540 /* TalkViewController.swift in Sources */,
 				753D6B661BB0E1F900726540 /* SpeakerViewController.swift in Sources */,
 				7577E4371BA4DC9C0022DBD9 /* Dynamic.swift in Sources */,
 				7577E4271BA4B6F10022DBD9 /* Speaker.swift in Sources */,
-				7577E42F1BA4B6F10022DBD9 /* ViewController.swift in Sources */,
+				7563301C1BC1D34900489D45 /* TalkDetails.swift in Sources */,
+				756330291BC1D7D800489D45 /* Extensions.swift in Sources */,
 				7577E42C1BA4B6F10022DBD9 /* ThreeSixtyViewModel.xcdatamodel in Sources */,
+				756330201BC1D38000489D45 /* SpeakerDetails.swift in Sources */,
+				7563301E1BC1D36200489D45 /* SpeakerList.swift in Sources */,
 				7577E42A1BA4B6F10022DBD9 /* Speaker+CoreDataProperties.swift in Sources */,
-				7531D8A11BBF37DB0047C127 /* Util.swift in Sources */,
 				7577E42B1BA4B6F10022DBD9 /* Talk+CoreDataProperties.swift in Sources */,
+				7563301A1BC1D31300489D45 /* TalkList.swift in Sources */,
 				752836C11BAF0799005ABA0E /* SpeakerListViewController.swift in Sources */,
+				756330271BC1D54900489D45 /* Parsers.swift in Sources */,
 				7577E4281BA4B6F10022DBD9 /* Talk.swift in Sources */,
 				752836C31BAF07C3005ABA0E /* TalkListViewController.swift in Sources */,
 				7577E4291BA4B6F10022DBD9 /* Store.swift in Sources */,
