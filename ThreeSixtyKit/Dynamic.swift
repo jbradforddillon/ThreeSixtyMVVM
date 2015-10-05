@@ -1,9 +1,6 @@
 //
-//  Observable.swift
-//  ThreeSixtyViewModel
-//
-//  Created by Brad Dillon on 9/12/15.
-//  Copyright © 2015 POSSIBLE Mobile. All rights reserved.
+//  Created by Srdan Rasic on 12/10/14.
+//  http://rasic.info/bindings-generics-swift-and-mvvm/
 //
 
 import Foundation
