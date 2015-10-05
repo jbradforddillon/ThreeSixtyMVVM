@@ -36,7 +36,7 @@ class ThreeSixtyViewModelTests: XCTestCase {
             
             let firstRow = list.talkViewModelAtIndex(0)
             
-            XCTAssertEqual(firstRow.name.value, "How To Do The Stuff")
+            XCTAssertEqual(firstRow.talkTitle.value, "How To Do The Stuff")
         }
         
         self.waitForExpectationsWithTimeout(3) { 
@@ -51,11 +51,11 @@ class ThreeSixtyViewModelTests: XCTestCase {
             
             let details = TalkDetailsViewModel(store: self.store, talk: talks[0])
             
-            details.name.bind { XCTAssertEqual($0, "How To Do The Stuff") }
-            details.location.bind { XCTAssertEqual($0, "Room 1") }
+            details.talkTitle.bind { XCTAssertEqual($0, "How To Do The Stuff") }
+            details.talkLocation.bind { XCTAssertEqual($0, "Room 1") }
             
-            XCTAssertEqual(details.name.value, "How To Do The Stuff")
-            XCTAssertEqual(details.location.value, "")
+            XCTAssertEqual(details.talkTitle.value, "How To Do The Stuff")
+            XCTAssertEqual(details.talkLocation.value, "")
                         
             details.refresh { expect.fulfill() }
         }
